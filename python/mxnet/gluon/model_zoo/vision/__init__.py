@@ -30,6 +30,7 @@ This module contains definitions for the following model architectures:
 -  `MobileNet`_
 
 You can construct a model with random weights by calling its constructor:
+
 .. code::
 
     from mxnet.gluon.model_zoo import vision
@@ -38,16 +39,15 @@ You can construct a model with random weights by calling its constructor:
     squeezenet = vision.squeezenet1_0()
     densenet = vision.densenet_161()
 
-We provide pre-trained models for all the models except ResNet V2.
-These can constructed by passing
-``pretrained=True``:
+We provide pre-trained models for all the listed models.
+These models can constructed by passing ``pretrained=True``:
+
 .. code::
 
     from mxnet.gluon.model_zoo import vision
     resnet18 = vision.resnet18_v1(pretrained=True)
     alexnet = vision.alexnet(pretrained=True)
 
-Pretrained models are converted from torchvision.
 All pre-trained models expect input images normalized in the same way,
 i.e. mini-batches of 3-channel RGB images of shape (N x 3 x H x W),
 where N is the batch size, and H and W are expected to be at least 224.

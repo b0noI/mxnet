@@ -16,9 +16,14 @@ This package includes several commonly used loss functions in neural networks.
 
     L2Loss
     L1Loss
-    SoftmaxCrossEntropyLoss
     SigmoidBinaryCrossEntropyLoss
+    SoftmaxCrossEntropyLoss
     KLDivLoss
+    HuberLoss
+    HingeLoss
+    SquaredHingeLoss
+    LogisticLoss
+    TripletLoss
     CTCLoss
 ```
 
